@@ -1,0 +1,18 @@
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.7
+
+mainClassName = "com.pissiphany.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':processor')
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

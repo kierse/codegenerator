@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeGenerator.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeGenerator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeGenerator_main.iml" group="CodeGenerator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeGenerator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeGenerator_test.iml" group="CodeGenerator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_main.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app_test.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app_test.iml" group="app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/processor/processor.iml" filepath="$PROJECT_DIR$/.idea/modules/processor/processor.iml" group="processor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/processor/processor_main.iml" filepath="$PROJECT_DIR$/.idea/modules/processor/processor_main.iml" group="processor" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/processor/processor_test.iml" filepath="$PROJECT_DIR$/.idea/modules/processor/processor_test.iml" group="processor" />
+    </modules>
+  </component>
+</project>
