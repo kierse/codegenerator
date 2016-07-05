@@ -1,5 +1,6 @@
 package com.pissiphany.annotation;
 
+import com.pissiphany.model.persistence.ModelPersistenceService;
 import com.squareup.javapoet.*;
 
 import javax.annotation.Generated;
@@ -27,10 +28,7 @@ import java.util.*;
  *
  * 2. run debug "Debug annotation processor" configuration
  */
-@SupportedAnnotationTypes({
-        "com.pissiphany.annotation.ModelPersistence",
-//        "com.pissiphany.annotation.ModelPersistence.Column"
-})
+@SupportedAnnotationTypes("com.pissiphany.annotation.ModelPersistence")
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
 public class ModelPersistenceGenerator extends AbstractProcessor {
     private static final String CANONICAL_INT = "java.lang.Integer";
@@ -148,7 +146,7 @@ public class ModelPersistenceGenerator extends AbstractProcessor {
     }
 
     private TypeSpec buildModelPersistenceClass(TypeElement classElement, MethodSpec fromCursor) {
-        return TypeSpec.classBuilder(classElement.getSimpleName() + "ModelPersistence")
+        return TypeSpec.classBuilder(classElement.getSimpleName() + "ModelPersistenceService")
                        .addAnnotation(
                                AnnotationSpec.builder(Generated.class)
                                              .addMember("value", "$S", this.getClass().getCanonicalName())
@@ -156,9 +154,7 @@ public class ModelPersistenceGenerator extends AbstractProcessor {
                        )
                        .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
                        .addSuperinterface(ParameterizedTypeName.get(
-                               // In order to avoid depending on the app module, manually build an applicable
-                               // ClassName here.
-                               ClassName.get("com.pissiphany.model.persistence", "ModelPersistence"),
+                               ClassName.get(ModelPersistenceService.class),
                                TypeName.get(classElement.asType())
                        ))
                        .addMethod(fromCursor)
