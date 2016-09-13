@@ -24,7 +24,7 @@ import java.util.*;
  *
  * 1. run the following on command line
  *
- *   ./gradlew --no-daemon -Dorg.gradle.debug=true :app:clean :app:javaCompile
+ *   ./gradlew --no-daemon -Dorg.gradle.debug=true :app:clean :app:compileJava
  *
  * 2. run debug "Debug annotation processor" configuration
  *
