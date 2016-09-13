@@ -27,6 +27,15 @@ import java.util.*;
  *   ./gradlew --no-daemon -Dorg.gradle.debug=true :app:clean :app:javaCompile
  *
  * 2. run debug "Debug annotation processor" configuration
+ *
+ * Links:
+ * https://deors.wordpress.com/2011/10/31/annotation-generators/
+ * https://github.com/deors/deors.demos.annotations
+ * https://github.com/google/compile-testing
+ * http://www.hascode.com/2015/02/generating-java-source-files-with-javapoet/
+ * http://hannesdorfmann.com/annotation-processing/annotationprocessing101
+ * http://hannesdorfmann.com/android/sqlbrite-dao
+ *
  */
 @SupportedAnnotationTypes("com.pissiphany.annotation.ModelPersistence")
 @SupportedSourceVersion(SourceVersion.RELEASE_7)
