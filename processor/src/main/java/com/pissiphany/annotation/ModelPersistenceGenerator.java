@@ -17,6 +17,10 @@ import java.util.*;
 /**
  * Created by kierse on 2016-07-02.
  *
+ * Run from command line:
+ *
+ *   ./gradlew :app:clean :app:compileJava
+ *
  * How to debug annotation processor:
  * https://blog.xmartlabs.com/2016/03/28/Debugging-an-Annotator-Processor-in-your-project/
  *
